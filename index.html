@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <h1>⌨️ Typing Speed Test</h1>
+
+      <section class="levels">
+        <button data-level="1">Lvl 1</button>
+        <button data-level="2" disabled>Lvl 2</button>
+        <button data-level="3" disabled>Lvl 3</button>
+        <button data-level="4" disabled>Lvl 4</button>
+        <button data-level="5" disabled>Lvl 5</button>
+        <button data-level="6" disabled>Lvl 6</button>
+        <button data-level="7" disabled>Lvl 7</button>
+        <button data-level="8" disabled>Lvl 8</button>
+        <button data-level="9" disabled>Lvl 9</button>
+        <button data-level="10" disabled>Lvl 10</button>
+      </section>
+
+      <p class="current-level">Level 1</p>
+
+      <!-- Paragraph display -->
+      <p id="textDisplay" class="text-display"></p>
+
+      <textarea
+        id="inputBox"
+        placeholder="Start typing here..."
+        disabled
+      ></textarea>
+
+      <section class="stats">
+        <div>⏱ <span id="time">30</span>s</div>
+        <div>⚡ <span id="wpm">0</span> WPM</div>
+        <div>🎯 <span id="accuracy">0</span>%</div>
+      </section>
+
+      <button id="startBtn" class="start-btn">Start Quiz</button>
+      <p id="completionMessage" class="completion-message"></p>
+
+      <!-- Dark mode toggle -->
+      <button id="darkModeBtn" class="dark-mode-btn">🌙 Dark Mode</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

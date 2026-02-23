@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  transition: background 0.3s;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #2c2c54, #474787);
+  color: #fff;
+}
+
+.app {
+  background: #fff;
+  width: 500px;
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode .app {
+  background: #3b3b6b;
+  color: #fff;
+}
+
+h1 {
+  color: #6a5acd;
+  margin-bottom: 16px;
+}
+
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.levels button {
+  background: #ffe6f2;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.levels button:hover:enabled {
+  background: #ffd1e8;
+  transform: translateY(-2px);
+}
+
+.levels button:disabled {
+  background: #eee;
+  cursor: not-allowed;
+}
+
+.current-level {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ff69b4;
+}
+
+.text-display {
+  background: #f6f6ff;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 15px;
+  margin-bottom: 12px;
+  text-align: left;
+  min-height: 80px;
+  white-space: pre-wrap;
+}
+
+.correct {
+  color: #4caf50;
+}
+
+.incorrect {
+  color: #ff3b3b;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 14px;
+  border: 2px solid #ddd;
+  padding: 12px;
+  font-size: 15px;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #6a5acd;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  font-weight: 500;
+}
+
+.start-btn {
+  background: #6a5acd;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.start-btn:hover {
+  background: #5a4fcf;
+  transform: translateY(-2px);
+}
+
+.completion-message {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #ff69b4;
+}
+
+.dark-mode-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: #ffe6f2;
+  transition: background 0.2s;
+}
+
+.dark-mode-btn:hover {
+  background: #ffd1e8;
+}
